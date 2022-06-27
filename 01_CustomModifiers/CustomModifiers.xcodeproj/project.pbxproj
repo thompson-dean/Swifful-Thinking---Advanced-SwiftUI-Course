@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2A108AE62855A94C002DF372 /* CustomModifiersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A108AE52855A94C002DF372 /* CustomModifiersApp.swift */; };
-		2A108AE82855A94C002DF372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A108AE72855A94C002DF372 /* ContentView.swift */; };
 		2A108AEA2855A94C002DF372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A108AE92855A94C002DF372 /* Assets.xcassets */; };
 		2A108AED2855A94C002DF372 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A108AEC2855A94C002DF372 /* Preview Assets.xcassets */; };
+		2AA25E762869E262007E1284 /* ViewModifierBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA25E752869E262007E1284 /* ViewModifierBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A108AE22855A94C002DF372 /* CustomModifiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomModifiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A108AE52855A94C002DF372 /* CustomModifiersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiersApp.swift; sourceTree = "<group>"; };
-		2A108AE72855A94C002DF372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A108AE92855A94C002DF372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A108AEC2855A94C002DF372 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AA25E752869E262007E1284 /* ViewModifierBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				2A108AE52855A94C002DF372 /* CustomModifiersApp.swift */,
-				2A108AE72855A94C002DF372 /* ContentView.swift */,
+				2AA25E752869E262007E1284 /* ViewModifierBootcamp.swift */,
 				2A108AE92855A94C002DF372 /* Assets.xcassets */,
 				2A108AEB2855A94C002DF372 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A108AE82855A94C002DF372 /* ContentView.swift in Sources */,
+				2AA25E762869E262007E1284 /* ViewModifierBootcamp.swift in Sources */,
 				2A108AE62855A94C002DF372 /* CustomModifiersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
