@@ -2,6 +2,8 @@
 
 This lesson is all about how to make custom ViewModifiers to clean up some messy code, or to aid in keeping views consistant.
 
+you can add many ViewModifiers to your views in SwiftUI as show below.
+
 ```
 Text("Hello World!")
     .foregroundColor(.white)
@@ -12,7 +14,11 @@ Text("Hello World!")
     .shadow(radius: 10)
 ```
 
-ViewModifier
+Sometimes you will have many items that consist of the ViewModifiers and the code can get out of hand quite quickly, especially on bigger projects.
+In this case it is a great idea to create a custom ViewModifier.
+
+You can create ViewModifiers in a very similar to how a view is made.
+The main difference is seen in its body function, where a parameter "content" is needed. This parameter refers to any View you will asign the modifiers too. Tou can add ViewModifiers on to content in the same manner you would with any View. For reference check the code below.
 
 ```
 struct DefaultButtonViewModifier: ViewModifier {
@@ -30,12 +36,14 @@ struct DefaultButtonViewModifier: ViewModifier {
 }
 ```
 
+Now when you use this custom modifier (as below) it will take on every everything specified.
+
 ```
 Text("Hello World!")
-    .withDefaultButtonFormatting()
+    .modifier(DefaultButtonViewModifier())
 ```
 
-To make it a view extension
+We can go one step further here by extending the View to make the custom ViewModifier similar to normal ViewModifiers. Like so
 
 ```
 extension View {
@@ -45,7 +53,14 @@ extension View {
 }
 ```
 
-To make a parameter dynamic, you can do things like:
+Now we can use the syntax below to use our custom ViewModifier! Quite neat!
+
+```
+Text("Hello World!")
+    .withDefaultButtonFormatting()
+```
+
+If you want to make your custom ViewModifiers dynamic you can use the code below:
 
 ```
 struct DefaultButtonViewModifier: ViewModifier {
