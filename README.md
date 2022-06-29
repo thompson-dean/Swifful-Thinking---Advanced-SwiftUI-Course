@@ -10,7 +10,7 @@ Studying advanced SwiftUI techniques including, animations, Combine, XCTests and
 
 | Type    | Completion |
 | :------ | :--------: |
-| Lessons |    1/25    |
+| Lessons |    3/25    |
 
 ## Lessons
 
@@ -18,5 +18,5 @@ Studying advanced SwiftUI techniques including, animations, Combine, XCTests and
 | :-------------------------------------- | :---------------------------------- |
 | [Lesson 1](01_CustomModifiers)          | How to create custom ViewModifiers. |
 | [Lesson 2](02_CustomButtonStyle)        | How to create custom ButtonStyles.  |
-| Lesson 3                                | How to create custom transitions.   |
-| Lesson 4                                | How to use MatchedGeometryEffect.   |
+| [Lesson 3](03_CustomTransitions)        | How to create custom transitions.   |
+| [Lesson 4](04_MatchedGeometry)          | How to use MatchedGeometryEffect.   |
