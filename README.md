@@ -21,7 +21,7 @@ Studying advanced SwiftUI techniques including, animations, Combine, XCTests and
 | [Lesson 3](03_CustomTransitions)        | How to create custom transitions.                                         |
 | [Lesson 4](04_MatchedGeometry)          | How to use MatchedGeometryEffect.                                         |
 | [Lesson 5](05_CustomShapesBootcamp)     | Custom Shapes in SwiftUI                                                  |
-| Lesson 6                                | Custom Shapes with Arcs and Quad Cruves in SwiftUI                        |
+| [Lesson 6](06_CustomShapesWithArcs)     | Custom Shapes with Arcs and Quad Cruves in SwiftUI                        |
 | Lesson 7                                | Animate Custom shapes with AnimateableData in SwiftUI                     |
 | Lesson 8                                | How to use generics in Swift                                              |
 | Lesson 9                                | How to use @ViewBuilder in SwiftUI                                        |
@@ -35,4 +35,4 @@ Studying advanced SwiftUI techniques including, animations, Combine, XCTests and
 | Lesson 17                               | Unit Testing in a SwiftUI application in Xcode                            |
 | Lesson 18                               | UI Testing in a SwiftUI application in Xcode                              |
 | Lesson 19                               | Advanced Combine Publishers and Subscribers in SwiftUI                    |
-| Lesson 20                               | How to use Futures and Promises in COmbine                                |
+| Lesson 20                               | How to use Futures and Promises in Combine                                |

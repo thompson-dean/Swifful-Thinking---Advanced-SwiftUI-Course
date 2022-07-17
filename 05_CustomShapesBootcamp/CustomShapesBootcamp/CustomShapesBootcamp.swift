@@ -14,7 +14,6 @@ struct Triangle: Shape {
             path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
             path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
             path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
-            
         }
     }
 }
@@ -61,7 +60,7 @@ struct Rhombus: Shape {
 struct CustomShapesBootcamp: View {
     var body: some View {
         ZStack {
-            Trapezoid()
+            Rhombus()
                 
 //                .fill(LinearGradient(colors: [.purple, .yellow], startPoint: .topLeading, endPoint: .bottomTrailing))
                 .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round))
