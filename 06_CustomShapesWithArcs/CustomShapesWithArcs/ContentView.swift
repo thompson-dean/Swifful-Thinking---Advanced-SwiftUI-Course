@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+struct Trangle: Shape {
+    func path(in rect: CGRect) -> Path {
+        
+       
+    }
+    
+    
+}
+
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
