@@ -42,10 +42,42 @@ struct ShapeWithArc: Shape {
     }
 }
 
+struct QuadSample: Shape {
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            path.move(to: .zero)
+            path.addQuadCurve(
+                to: CGPoint(x: rect.midX, y: rect.midY),
+                control: CGPoint(x: rect.maxX, y: rect.minY))
+        }
+    }
+}
+
+struct WaterShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            path.move(to: CGPoint(x: rect.minX, y: rect.midY))
+            path.addQuadCurve(
+                to: CGPoint(x: rect.midX, y: rect.midY),
+                control: CGPoint(x: rect.width * 0.25, y: rect.height * 0.4))
+            
+            path.addQuadCurve(
+                to: CGPoint(x: rect.maxX, y: rect.midY),
+                control: CGPoint(x: rect.width * 0.75, y: rect.height * 0.6))
+            
+            path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+            path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
+        }
+    }
+}
+
 struct ContentView: View {
     var body: some View {
-        ShapeWithArc()
-            .frame(width: 300, height: 300)
+        WaterShape()
+            .fill(
+                LinearGradient(colors: [.purple, .yellow], startPoint: .leading, endPoint: .bottomTrailing)
+            )
+            .ignoresSafeArea()
     }
 }
 
