@@ -71,13 +71,32 @@ struct WaterShape: Shape {
     }
 }
 
+struct InterstingShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            path.move(to: CGPoint(x: rect.midX, y: rect.minY))
+            path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+            
+            path.addLine(to: CGPoint(x: rect.maxX, y: rect.midY))
+            
+            path.addArc(
+                center: CGPoint(x: rect.midX, y: rect.midY),
+                radius: rect.height / 2,
+                startAngle: Angle(degrees: 0),
+                endAngle: Angle(degrees: 270),
+                clockwise: false)
+            
+        }
+    }
+}
+
 struct ContentView: View {
     var body: some View {
-        WaterShape()
+        InterstingShape()
             .fill(
-                LinearGradient(colors: [.purple, .yellow], startPoint: .leading, endPoint: .bottomTrailing)
+                LinearGradient(colors: [.red, .purple], startPoint: .bottomTrailing, endPoint: .topTrailing)
             )
-            .ignoresSafeArea()
+            .frame(width: 300, height: 300)
     }
 }
 
