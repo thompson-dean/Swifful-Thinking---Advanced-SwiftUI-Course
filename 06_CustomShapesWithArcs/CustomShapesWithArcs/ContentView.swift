@@ -91,12 +91,27 @@ struct InterstingShape: Shape {
 }
 
 struct ContentView: View {
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
-        InterstingShape()
-            .fill(
-                LinearGradient(colors: [.red, .purple], startPoint: .bottomTrailing, endPoint: .topTrailing)
-            )
-            .frame(width: 300, height: 300)
+        
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach(0..<20, id: \.self) { _ in
+                    InterstingShape()
+                        .fill(
+                            LinearGradient(colors: [.purple, .red], startPoint: .bottomTrailing, endPoint: .topTrailing)
+                        )
+                        .frame(width: 100, height: 100)
+                }
+            }
+        }
+        
     }
 }
 
