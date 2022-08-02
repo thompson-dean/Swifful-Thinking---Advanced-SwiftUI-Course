@@ -10,7 +10,7 @@ Studying advanced SwiftUI techniques including, animations, Combine, XCTests and
 
 | Type    | Completion |
 | :------ | :--------: |
-| Lessons |    6/25    |
+| Lessons |    7/25    |
 
 ## Lessons
 
