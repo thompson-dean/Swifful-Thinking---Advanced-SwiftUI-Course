@@ -10,7 +10,7 @@ Studying advanced SwiftUI techniques including, animations, Combine, XCTests and
 
 | Type    | Completion |
 | :------ | :--------: |
-| Lessons |    7/25    |
+| Lessons |    8/25    |
 
 ## Lessons
 
@@ -24,7 +24,7 @@ Studying advanced SwiftUI techniques including, animations, Combine, XCTests and
 | [Lesson 6](06_CustomShapesWithArcs)     | Custom Shapes with Arcs and Quad Cruves in SwiftUI                        |
 | [Lesson 7](07_AnimatableDataBootcamp)   | Animate Custom shapes with AnimateableData in SwiftUI                     |
 | [Lesson 8](08_GenericsBootcamp)         | How to use generics in Swift                                              |
-| Lesson 9                                | How to use @ViewBuilder in SwiftUI                                        |
+| [Lesson 9](09_ViewBuilderBootcamp)      | How to use @ViewBuilder in SwiftUI                                        |
 | Lesson 10                               | Use PreferenceKey to extract values from child views in SwiftUI           |
 | Lesson 11                               | Create a custom tab bar in SwiftUI                                        |
 | Lesson 12                               | Create a custom navigation bar and link in SwiftUI                        |
